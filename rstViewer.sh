@@ -14,13 +14,16 @@ else
 fi
 
 
+if [ $1 ]; then
+	rstFile="$1"
+else
+	# input dialog
+	rstFile=$(yad --width=500 --height=150 --entry --title="RST Viewer" --image="$path/icon-rstViewer-128.png" --button="Build File" --button="File select Dialog" --text="Insert the path to your rst file or use the file select dialog.")
 
-# input dialog
-rstFile=$(yad --width=500 --height=150 --entry --title="RST Viewer" --image="$path/icon-rstViewer-128.png" --button="Build File" --button="File select Dialog" --text="Insert the path to your rst file or use the file select dialog.")
-
-# file choosing dialog
-if [ $? -ne 0 ]; then
-	rstFile=$(yad --file ..title="Choose rst file" --width=800 --height=500 --window-icon="$path/icon-rstViewer-256.png" --center --file-filter=" | *.rst")
+	# file choosing dialog
+	if [ $? -ne 0 ]; then
+		rstFile=$(yad --file ..title="Choose rst file" --width=800 --height=500 --window-icon="$path/icon-rstViewer-256.png" --center --file-filter=" | *.rst")
+	fi
 fi
 
 if [ $rstFile ]; then
