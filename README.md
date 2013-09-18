@@ -17,15 +17,15 @@ System requirements
 * an pdf viewer installed
 * yad installed (used for the graphical dialogs)
 
-sudo apt-get install rst2pdf yad
+`sudo apt-get install rst2pdf yad`
 
 Installation
 ------------
 Copy the programm folder to /usr/local/bin and the programm launcher rstViewer.desktop in the folder to ~/.local/share/applications
 
-cd /usr/local/bin
-git clone git@github.com:moonline/rstViewer.git
-cp rstViewer/rstViewer.desktop ~/.local/share/applications/
+    cd /usr/local/bin
+    git clone git@github.com:moonline/rstViewer.git
+    cp rstViewer/rstViewer.desktop ~/.local/share/applications/
 
 Configuration
 -------------
