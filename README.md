@@ -1,5 +1,7 @@
+========================
 Restructured Text Viewer
 ========================
+Restructured Text Viewer is a bash script, which simulates an rst editor/viewer with yad, rst2pdf, an editor and an pdf viewer.
 
 Author: Tobias Blaser
 Version: 1.0
@@ -24,3 +26,4 @@ Copy the programm folder to /usr/local/bin and the programm launcher rstViewer.d
 Configuration
 -------------
 To change the editor or the pdf viewer, copy the configuration file rstViewer.conf to ~/.rstViewer/rstViewer.conf and change it to your preferences.
+
