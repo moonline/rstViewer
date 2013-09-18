@@ -1,0 +1,14 @@
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Restructured Text Viewer
+Comment=RST Viewer
+Icon=/usr/local/bin/rstViewer/icon-rstViewer-256.png
+Exec=sh /usr/local/bin/rstViewer.sh
+Path=
+Terminal=false
+StartupNotify=false
+Categories=Development
+Name[en_US]=rstViewer.desktop
+Comment[en_US]=RST Viewer
