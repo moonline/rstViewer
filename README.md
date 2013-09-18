@@ -23,6 +23,10 @@ Installation
 ------------
 Copy the programm folder to /usr/local/bin and the programm launcher rstViewer.desktop in the folder to ~/.local/share/applications
 
+cd /usr/local/bin
+git clone git@github.com:moonline/rstViewer.git
+cp rstViewer/rstViewer.desktop ~/.local/share/applications/
+
 Configuration
 -------------
 To change the editor or the pdf viewer, copy the configuration file rstViewer.conf to ~/.rstViewer/rstViewer.conf and change it to your preferences.
