@@ -22,7 +22,7 @@ else
 
 	# file choosing dialog
 	if [ $? -ne 0 ]; then
-		rstFile=$(yad --file ..title="Choose rst file" --width=800 --height=500 --window-icon="$path/icon-rstViewer-256.png" --center --file-filter=" | *.rst")
+		rstFile=$(yad --file --title="Choose rst file" --width=800 --height=500 --window-icon="$path/icon-rstViewer-256.png" --center --file-filter=" | *.rst")
 	fi
 fi
 
